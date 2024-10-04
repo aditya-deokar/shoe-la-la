@@ -20,19 +20,19 @@ const Hero = () => {
     >
        <div className="relative w-full xl:w-2/5 flex flex-col justify-center items-start max-xl:padding-x pt-28 z-10 ">
 
-        <p className="font-montserrat text-coral-red text-xl">Our Summer collection</p>
+        <p className="font-montserrat text-coral-red text-xl mt-10">Our Summer collection</p>
 
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[7vmax] leading-none font-bold">
+        <h1 className="font-palanquin text-8xl max-sm:text-[7vmax] leading-none font-bold">
           <span className="relative pr-10 xl:whitespace-nowrap">The New Arrival</span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Shoe La la</span> Shoes
+          <span className="text-coral-red inline-block ">Shoe La la</span> Shoes
         </h1>
 
-        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover Stylish Shoe la la arrivals,quality comfort, and innovation for your action life.</p>
+        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-8 sm:max-w-sm">Discover Stylish Shoe la la arrivals,quality comfort, and innovation for your action life.</p>
 
         <Button label="Shop now" iconURL={arrowRight}/>
 
-        <div className="w-full mt-20 flex items-start justify-start flex-wrap gap-16">
+        <div className="w-full mt-10 flex items-start justify-start flex-wrap gap-16">
 
           {statistics.map((item ,index)=>(
             <div key={index}>

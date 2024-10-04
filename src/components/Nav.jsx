@@ -8,11 +8,7 @@ const Nav = () => {
     <header className='padding-x py-8 absolute z-10 w-full'>
       <nav className='flex justify-between items-center max-container'>
         <a href="/">
-          <img src={headerLogo} 
-              alt="Shoe La La"
-              width={130}
-              height={40}
-          />
+         <h4 className='text-coral-red text-xl font-palanquin'>Shoe la la</h4>
         </a>
          
          <ul className='flex flex-1 justify-center items-center gap-16 max-lg:hidden'>
@@ -32,7 +28,9 @@ const Nav = () => {
 
           {
               ["login/" , "signup"].map((item)=>(
-                <li className='font-montserrat leading-normal font-medium text-lg text-slate-gray '>{item}</li>
+                <li className='font-montserrat leading-normal font-medium text-lg text-slate-gray '>
+                  <a href="#">{item}</a>
+                </li>
               ))
           }
 
