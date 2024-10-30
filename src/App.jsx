@@ -11,10 +11,15 @@ import {
 } from "./sections";
 
 import Nav from "./components/Nav";
+import Product from "./pages/Product";
 
 const App = () => {
   return (
     <main className='relative'>
+
+      <Product />
+
+      
       <Nav />
       <section className='xl:padding-l wide:padding-r padding-b'>
         <Hero />
