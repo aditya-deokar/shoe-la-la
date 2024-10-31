@@ -3,7 +3,7 @@ import { star } from '../assets/icons'
 
 const ProductCard = ({imgURL, name, price}) => {
   return (
-    <div className='flex flex-1 border-2 rounded-md px-3 p-2 flex-col w-full max-sm:w-40 '>
+    <div className='flex flex-1 border rounded-2xl p-3 flex-col w-full max-sm:w-40 shadow-3xl '>
             <img src={imgURL}
                  alt={name}
                  className='w-[280px] h-[280px] max-sm:h-fit'

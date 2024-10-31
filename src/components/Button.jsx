@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = ( {label , iconURL ,backgroundColor, textColor , borderColor} ) => {
+const Button = ( {label , iconURL ,backgroundColor, textColor , borderColor ,isHover} ) => {
   return (
-   <button className={`flex items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full
+   <button className={`flex items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none transition-all ease-in-out rounded-full
     ${backgroundColor ? 
-      `${backgroundColor} ${borderColor} ${textColor}` : "text-white bg-coral-red border-coral-red"
+      `${backgroundColor} ${borderColor} ${textColor} ${isHover}` : "text-white bg-coral-red border-coral-red"
     } 
      `}>
        {label}
